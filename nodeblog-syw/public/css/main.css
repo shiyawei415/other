@@ -1,0 +1,45 @@
+/* LESS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.index {
+  width: 100%;
+}
+
+.backimg {
+  width: 100%;
+}
+
+.backimg img {
+  display: block;
+  width: 100%;
+}
+
+.main table.one {
+  width: 95%;
+  border: 1px solid #ddd;
+  border-right: none;
+  line-height: 2;
+  text-align: center;
+  font-size: 12px;
+  margin: 15px auto;
+}
+
+.main table.one tr th,
+.main table.one tr td {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.main table.one tr.on{
+  background: #999;
+}
+
+.main table.one tr td.right{
+  color: green;
+}
+.main table.one tr td.err{
+  color: red;
+}
