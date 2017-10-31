@@ -63,12 +63,20 @@ function bigodd(type){
                 var newdata = JSON.parse(data).message;
                 var dhtml = '<tr><th width="10%">序号</th><th width="20%">期号</th> <th>万</th> <th>千</th> <th>百</th> <th>十</th> <th>个</th></tr>';
                 var wanarr =[];
+                var qianarr =[];
+                var baiarr =[];
+                var shiarr =[];
+                var gearr =[];
                 var oddClass=['','odd','','odd','','odd','','odd','','odd'];
                 var bigClass=['','','','','','big','big','big','big','big'];
                 
                 for (var i = 0; i < newdata.length; i++) {
                     var list = newdata[i].r.split(',');
                     wanarr.push(list[0]);
+                    qianarr.push(list[1]);
+                    baiarr.push(list[2]);
+                    shiarr.push(list[3]);
+                    gearr.push(list[4]);
 
                     if(type == '0'){
                             dhtml += '<tr>'+
@@ -98,7 +106,11 @@ function bigodd(type){
                 }
 
                 $('.main table.one').html(dhtml);
-                $('.backimg').attr('data-val', wanarr);
+                $('.backimg').attr('data-wan', wanarr);
+                $('.backimg').attr('data-qian', qianarr);
+                $('.backimg').attr('data-bai', baiarr);
+                $('.backimg').attr('data-shi', shiarr);
+                $('.backimg').attr('data-ge', gearr);
 
             }
         });
@@ -123,11 +135,19 @@ $(function () {
     })
 
 
-    $('.backimg').on('click','img',function () {
+    $('.backimg').on('click',function () {
         var index = $(this).index();
-        var wanarr = $(this).attr('data-val').split(',').join('');
+
+        var wanarr = $(this).attr('data-wan').split(',').join('');
+        var qianarr = $(this).attr('data-qian').split(',').join('');
+        var baiarr = $(this).attr('data-bai').split(',').join('');
+        var shiarr = $(this).attr('data-shi').split(',').join('');
+        var gearr = $(this).attr('data-ge').split(',').join('');
+
         alert(countNum(wanarr))
-        console.log(countNum(wanarr))
+
+
+        return ;
     })
 
 })

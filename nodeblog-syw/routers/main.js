@@ -25,7 +25,9 @@ router.get('/datalist', function (req, res, next) {
         .type("form")
         .end((err, data) => {
 
+
             console.log('加载中');
+            console.log(data);
             if (data && data.text) {
                 var newdata = data
                     .text
