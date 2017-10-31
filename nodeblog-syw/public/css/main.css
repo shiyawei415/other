@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+li{
+  list-style: none;
+}
 .index {
   width: 100%;
 }
@@ -17,11 +19,31 @@
   display: block;
   width: 100%;
 }
+.backimg ul{
+    width: 95%;
+    margin: 15px auto;
+    overflow: hidden;
+  
+}
+.backimg ul li {
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  float: left;
+  text-align: center;
+
+}
+
+.backimg ul li.on{
+  background: #ddd;
+}
 
 .main table.one {
   width: 95%;
   border: 1px solid #ddd;
   border-right: none;
+  border-bottom: none;
   line-height: 2;
   text-align: center;
   font-size: 12px;
@@ -42,4 +64,12 @@
 }
 .main table.one tr td.err{
   color: red;
+}
+
+.main table.one tr td.odd{
+  background: #80BD01;
+}
+
+.main table.one tr td.big{
+  background:#1488F4 ;
 }

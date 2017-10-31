@@ -54,13 +54,13 @@ app.use(function (req, res, next) {
 app.use('/admin', require('./routers/admin'));
 app.use('/api', require('./routers/api'));
 app.use('/', require('./routers/main'));
-
+app.listen(8082);
 //监听http请求
-mongoose.connect('mongodb://localhost:27017/blog', function (err) {
-    if (err) {
-        console.log('数据库连接失败');
-    } else {
-        console.log('数据库连接成功');
-        app.listen(8082);
-    }
-});
+// mongoose.connect('mongodb://localhost:27017/blog', function (err) {
+//     if (err) {
+//         console.log('数据库连接失败');
+//     } else {
+//         console.log('数据库连接成功');
+//         app.listen(8082);
+//     }
+// });
