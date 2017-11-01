@@ -15,13 +15,43 @@ li{
   width: 100%;
 }
 
+
+
 .backimg img {
   display: block;
   width: 100%;
 }
+.topcon {
+  width: 95%;
+  margin: 0 auto;
+}
+.topcon .cursor{
+  margin: 3% auto;
+  border-bottom: 1px solid #ddd;
+  line-height: 2;
+}
+.count{
+  margin: 5% auto;
+  border: 1px solid #ddd;
+}
+
+.count div{
+  border-bottom:1px solid #ddd;
+  padding-left: 2%;
+}
+.count div span{
+  display: inline-block;
+  height: 100%;
+  line-height: 2;
+}
+.count div span span{
+  border-left: 1px solid #ddd;
+  padding: 0 3px;
+}
+
+
 .backimg ul{
-    width: 95%;
-    margin: 15px auto;
+    margin:3% auto;
     overflow: hidden;
   
 }
@@ -38,6 +68,9 @@ li{
 .backimg ul li.on{
   background: #ddd;
 }
+
+
+
 
 .main table.one {
   width: 95%;
@@ -73,3 +106,5 @@ li{
 .main table.one tr td.big{
   background:#1488F4 ;
 }
+
+
