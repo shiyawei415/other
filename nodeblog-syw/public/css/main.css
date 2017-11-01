@@ -108,3 +108,23 @@ li{
 }
 
 
+.alert_box {
+  position: fixed;
+  width:98%;
+  height: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  top: 10px;
+  left:1%;
+  background: #333;
+  box-shadow: 1px 1px 1px 1px 1px #999;
+  color: #fff;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.alert_box span  span{
+  border-left:1px solid #ddd;
+  padding:0 5px;
+
+}
